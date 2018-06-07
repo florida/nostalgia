@@ -3,12 +3,49 @@
     <style type="text/css">
       body {
         margin: 0;
+        color: #fff;
+      }
+      
+      .tg  {border-collapse:collapse;border-spacing:0;}
+
+      #aboutme {
+        position: absolute;
+        top: 300px;
+        left: 20px;
+        height: 164px;
+        width: 640px;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #CC3366;
+      }
+      
+      #family {
+        position: absolute;
+        top: 570px;
+        left: 20px;
+        height: 160px;
+        width: 630px;
+        overflow: auto;
       }
 
-      .tg  {border-collapse:collapse;border-spacing:0;}
+      #friends {
+        position: absolute;
+        top: 810px;
+        left: 20px;
+        height: 160px;
+        width: 630px;
+        overflow: auto;
+      }
+
+
+      .photos img {
+        height: 150px;
+        display: inline;
+      }
     </style>
   </head>
   <body>
+    <!-- Background -->
     <table class="tg" cellspacing="0" cellpadding="0">
       <tr>
         <th class="tg-yw4l" colspan="3"><img src="./images/cra-r1-c1.jpg"></th>
@@ -22,5 +59,47 @@
         <td class="tg-yw4l"><img src="./images/cra-r3-c2.jpg"></td>
       </tr>
     </table>
+    <!-- Content -->
+
+      <marquee id="aboutme" direction="up">
+        <marquee behavior="alternate"><img src="./images/welcome-to-my-page.gif" /></marquee>
+        <p>Name: Florida Elago</p>
+        <p>Age: 13</p>
+        <p>Status: Single</p>
+        <p>Location: Laguna</p>
+        <p></p>
+      </marquee>
+
+    <div id="family">
+      <div class="photos">
+          <img src="./images/family.jpg" />
+          <img src="./images/king.jpg" /> 
+      </div>
+
+      <marquee behavior="alternate"><img src="./images/family-first.gif" /></marquee>
+      <p>Mom: Imelda</p>
+      <p>Dad: Orlando</p>
+      <p>Sister: Lem</p>
+      <p>Brother: Jed</p>
+      <p>Dog: King</p>
+    </div>
+
+    <div id="friends">
+      <div class="photos">
+        <marquee>
+          <img src="./images/tyler.jpg" />
+          <img src="./images/angela.jpg" />
+          <img src="./images/angelina.jpg" />
+          <img src="./images/patricia.jpg" />
+          <img src="./images/heather.jpg" />
+          <img src="./images/shameen.jpg" />
+          <img src="./images/tracy.jpg" />
+        </marquee>
+      </div>
+    </div>
+
+    <div id="school">
+      
+    </div>
   </body>
 </html>
